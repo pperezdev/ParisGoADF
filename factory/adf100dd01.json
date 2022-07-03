@@ -1,0 +1,12 @@
+{
+	"name": "adf100dd01",
+	"properties": {
+		"globalParameters": {
+			"PARIS_COMMERCE": {
+				"type": "string",
+				"value": "https://opendata.paris.fr/api/records/1.0/search/?dataset=coronavirus-commercants-parisiens-livraison-a-domicile&q=&facet=code_postal&facet=type_de_commerce&facet=fabrique_a_paris&facet=services"
+			}
+		}
+	},
+	"location": "francecentral"
+}
