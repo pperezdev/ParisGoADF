@@ -7,7 +7,8 @@
 		},
 		"parameters": {
 			"filname": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "paris_data_que_faire_24052022.csv"
 			}
 		},
 		"folder": {
@@ -20,7 +21,10 @@
 				"type": "AmazonS3CompatibleLocation",
 				"bucketName": "s3pa4dd01",
 				"folderPath": "raw_folder/paris_activite",
-				"fileName": "paris_data_que_faire_24052022.csv"
+				"fileName": {
+					"value": "@dataset().filname",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ";",
 			"escapeChar": "\\",
