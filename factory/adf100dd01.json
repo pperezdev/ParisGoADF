@@ -5,6 +5,10 @@
 			"PARIS_COMMERCE": {
 				"type": "string",
 				"value": "https://opendata.paris.fr/api/records/1.0/search/?dataset=coronavirus-commercants-parisiens-livraison-a-domicile&q=&facet=code_postal&facet=type_de_commerce&facet=fabrique_a_paris&facet=services"
+			},
+			"PARIS_ACTIVITE": {
+				"type": "string",
+				"value": "https://opendata.paris.fr/api/v2/catalog/datasets/coronavirus-commercants-parisiens-livraison-a-domicile/exports/csv?limit=-1&offset=0&timezone=UTC"
 			}
 		}
 	},
