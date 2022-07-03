@@ -1,6 +1,29 @@
 {
-	"name": "PL_GET_PARIS_DATA",
+	"name": "PL_GET_PARIS_DATA_COMMERCE",
 	"properties": {
+		"activities": [
+			{
+				"name": "Get Paris Data Commerce",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.00:10:00",
+					"retry": 2,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "@pipeline().globalParameters.PARIS_COMMERCE",
+						"type": "Expression"
+					},
+					"method": "GET",
+					"datasets": []
+				}
+			}
+		],
 		"annotations": []
 	}
 }
