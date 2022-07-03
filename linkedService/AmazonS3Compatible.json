@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "AmazonS3Compatible",
 		"typeProperties": {
-			"serviceUrl": "https://s3pa4dd01.s3.amazonaws.com/",
+			"serviceUrl": "https://s3pa4dd01.s3.us-east-1.amazonaws.com/",
 			"accessKeyId": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
