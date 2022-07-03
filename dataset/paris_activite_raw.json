@@ -1,0 +1,37 @@
+{
+	"name": "paris_activite_raw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AmazonS3Compatible",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filname": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "RawFile"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3CompatibleLocation",
+				"bucketName": "s3pa4dd01",
+				"folderPath": "raw_folder/paris_activite",
+				"fileName": "paris_data_que_faire_24052022.csv"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "nom_du_commerce;adresse;code_postal;type_de_commerce;fabrique_a_paris;services;description;precisions;site_internet;telephone;mail;geo_shape;geo_point_2d",
+				"type": "String"
+			}
+		]
+	}
+}
