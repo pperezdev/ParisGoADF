@@ -1,0 +1,27 @@
+{
+	"name": "AmazonS3Compatible",
+	"properties": {
+		"annotations": [],
+		"type": "AmazonS3Compatible",
+		"typeProperties": {
+			"serviceUrl": "https://s3pa4dd01.s3.amazonaws.com/",
+			"accessKeyId": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "s3accesskey"
+			},
+			"secretAccessKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "s3secretaccesskey"
+			},
+			"forcePathStyle": false
+		}
+	}
+}
