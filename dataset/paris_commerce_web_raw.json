@@ -1,0 +1,24 @@
+{
+	"name": "paris_commerce_web_raw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ParisCommerce",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "RawFile"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
