@@ -1,0 +1,22 @@
+{
+	"name": "paris_commerce_raw_S3_default",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AmazonS3Compatible",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "RawFile"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3CompatibleLocation",
+				"bucketName": "s3pa4dd01",
+				"folderPath": "raw_folder/paris_commerce",
+				"fileName": "raw_file_commerce.csv"
+			}
+		}
+	}
+}

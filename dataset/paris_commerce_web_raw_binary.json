@@ -1,0 +1,19 @@
+{
+	"name": "paris_commerce_web_raw_binary",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ParisCommerce",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "RawFile"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		}
+	}
+}
