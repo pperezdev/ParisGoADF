@@ -26,7 +26,12 @@
 						}
 					},
 					"sink": {
-						"type": "BinarySink"
+						"type": "DelimitedTextSink",
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
 					},
 					"enableStaging": false
 				},
@@ -38,8 +43,11 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "paris_commerce_raw_S3_default",
-						"type": "DatasetReference"
+						"referenceName": "paris_commerce_raw",
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": "test.csv"
+						}
 					}
 				]
 			}
