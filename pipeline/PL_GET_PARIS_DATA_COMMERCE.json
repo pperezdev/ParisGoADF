@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "download file",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -25,11 +25,20 @@
 							"type": "BinaryReadSettings"
 						}
 					},
+					"sink": {
+						"type": "BinarySink"
+					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "paris_commerce_web_raw_binary",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "paris_commerce_raw_S3_default",
 						"type": "DatasetReference"
 					}
 				]
