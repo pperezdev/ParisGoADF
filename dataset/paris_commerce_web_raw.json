@@ -13,7 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "https://opendata.paris.fr/api/records/1.0/search/?dataset=coronavirus-commercants-parisiens-livraison-a-domicile&q=&facet=code_postal&facet=type_de_commerce&facet=fabrique_a_paris&facet=services"
+				"relativeUrl": "https://opendata.paris.fr/explore/dataset/coronavirus-commercants-parisiens-livraison-a-domicile/download/?format=csv&timezone=Europe/Berlin&lang=fr&use_labels_for_header=true&csv_separator=%3B"
 			},
 			"columnDelimiter": ";",
 			"escapeChar": "\\",
